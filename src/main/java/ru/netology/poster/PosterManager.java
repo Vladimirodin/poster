@@ -5,6 +5,7 @@ public class PosterManager {
     private int limit;
 
     public PosterManager() {
+
         this.limit = 10;
     }
     public PosterManager(int limit) {
@@ -21,6 +22,7 @@ public class PosterManager {
     }
 
     public String[] findAll() {
+
         return titles;
     }
 
