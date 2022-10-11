@@ -5,9 +5,9 @@ public class PosterManager {
     private int limit;
 
     public PosterManager() {
-
         this.limit = 10;
     }
+
     public PosterManager(int limit) {
         this.limit = limit;
     }
@@ -27,13 +27,13 @@ public class PosterManager {
     }
 
     public String[] findLast() {
-        int resultlenght;
+        int resultLenght;
         if (titles.length < limit) {
-            resultlenght = titles.length;
+            resultLenght = titles.length;
         } else {
-            resultlenght = limit;
+            resultLenght = limit;
         }
-        String[] tmp = new String[resultlenght];
+        String[] tmp = new String[resultLenght];
         for (int i = 0; i < tmp.length; i++) {
             tmp[i] = titles[titles.length - 1 - i];
         }
